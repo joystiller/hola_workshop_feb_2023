@@ -31,12 +31,12 @@ Starta servern som laddar ner vädret, skriv
 node index.js
 ```
 
-Lägg märke till att vädret skrivs ut i terminalen i Pd. För att ändra vilken geografisk position som används kan man ta read på latitude och longitude [här](https://opendata.smhi.se/apidocs/metfcst/demo_point.html). Välj en plats på kartan och kopiera in siffrorna för latitude och longitude i index.js. Nästan högst upp i dokumentet finns två variabler, en för latitude och en för longitud. Ändra siffrorna och starta om programmet (för att avsluta programmet, tryck ctrl+c). 
+Lägg märke till att vädret skrivs ut i terminalen i Pd. För att ändra vilken geografisk position, börja med att följa länken till SMHIs API [här](https://opendata.smhi.se/apidocs/metfcst/demo_point.html), välj sedan en plats på kartan och kopiera in siffrorna för latitude och longitude i index.js. Nästan högst upp i dokumentet finns två variabler, en för latitude och en för longitud. Ändra siffrorna och starta om programmet (för att avsluta programmet, tryck först ctrl+c, för att bläddra mellan senaste kommandon kan man använda piltangen upp tills man kommer tillbaka till "node index.js".
 
-Längst ner på [denna sida](https://opendata.smhi.se/apidocs/metfcst/parameters.html) står vad siffrorna betyder. Det står också i en kommentar i pd-sketchen, om än något svårläst. 
+Servern skickar siffror till Pd som beskriver olika väderförhållanden. Längst ner på [denna sida](https://opendata.smhi.se/apidocs/metfcst/parameters.html) står vad siffrorna betyder.
 
-Med till exempel [route] objektet kan man i Pd routa siffror till olika siffror, alltså väder, till olika events. 
+För att trigga olika events i Pd, till exempel en ljudfil med [readsf~], kan man routa olika väder, alltså siffrorna som kommer från servern, med till exempel [route] objektet.
 
-Vädret uppdateras automatiskt en gång i timman. Objektet [change] används för att hindra Pd att skicka till exempel en bang ifall vädret uppdateras, men vädret är detsamma.
+SMHIs API uppdaterar väderprognosen för dygnets alla 24 timmar varje hel timma, vidare läser koden av det nuvarande vädret när programmet startas, och uppdateras sen automatiskt en gång i timman. Objektet [change] används för att hindra Pd att skicka till exempel en bang ifall vädret uppdateras, men vädret är detsamma.
 
 

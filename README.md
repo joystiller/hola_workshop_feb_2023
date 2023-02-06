@@ -37,4 +37,6 @@ Längst ner på [denna sida](https://opendata.smhi.se/apidocs/metfcst/parameters
 
 Med till exempel [route] objektet kan man i Pd routa siffror till olika siffror, alltså väder, till olika events. 
 
-Vädret uppdateras automatiskt en gång i timman. 
+Vädret uppdateras automatiskt en gång i timman. Objektet [change] används för att hindra Pd att skicka till exempel en bang ifall vädret uppdateras, men vädret är detsamma.
+
+

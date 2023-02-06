@@ -1,0 +1,14 @@
+{
+  "name": "hola_workshop_api_feb_2023",
+  "version": "1.0.0",
+  "description": "example of how to use api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anton söderberg",
+  "license": "ISC",
+  "dependencies": {
+    "osc-min": "^1.1.2"
+  }
+}

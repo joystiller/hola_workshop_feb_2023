@@ -4,7 +4,7 @@ Kopiera länken till koden (tryck på gröna knappen "code", kopiera https koden
 
 Öppna terminalen eller kommandotolken
 
-Används commando "cd" för att navigera till en lämplig folder (https://help.ubuntu.com/community/UsingTheTerminal)
+Används commando "cd" för att navigera till en lämplig folder. Mer om det [här](https://help.ubuntu.com/community/UsingTheTerminal).
 
 Skriv 
 ```

@@ -1,6 +1,8 @@
 var osc = require('osc-min'),
     dgram = require('dgram'),
-    remote;
+    remote,
+    longitude = 21.950683,
+    latitude = 65.748682;
 
 var udp = dgram.createSocket('udp4', function (msg, rinfo) {
 
@@ -22,7 +24,7 @@ setInterval(getWeather, 3600000);
 function getWeather() {
     let currentWeather;
     let Wsymb2;
-    fetch('https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.102919/lat/59.336600/data.json')
+    fetch('https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/' + longitude + '/lat/' + latitude + '/data.json')
         .then(res => res.json())
         .then(data => {
 

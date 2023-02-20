@@ -1,0 +1,7 @@
+#line 1 "/Users/antonsoderberg/Documents/Arduino/hola_workshop_feb_2023/button/.vscode/arduino.json"
+{
+    "port": "/dev/tty.usbmodem14601",
+    "board": "arduino:avr:uno",
+    "sketch": "button.ino",
+    "output": "../ArduinoOutput"
+}

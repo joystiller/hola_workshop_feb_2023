@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "../../..,../../..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "arduino:avr:uno",
+  "hardwareFolders": "/Users/antonsoderberg/Library/Arduino15/packages",
+  "otherLibrariesFolders": "/Users/antonsoderberg/Documents/Arduino/libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "/Users/antonsoderberg/Documents/Arduino/hola_workshop_feb_2023/button"
+}

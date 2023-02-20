@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/antonsoderberg/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/antonsoderberg/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
+  },
+  {
+    "Sourcefile": "/Users/antonsoderberg/Documents/Arduino/hola_workshop_feb_2023/ArduinoOutput/sketch/button.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

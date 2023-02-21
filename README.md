@@ -18,10 +18,12 @@ Mappen innehåller flera olika filer för olika projekt. För att använda ardui
 
 För att använda .pd-sketcherna kan du behöva installera olika bibliotek. Gå till help -> find externals, och installera följande bibliotek:
 
+```
 else
 cyclone
 iemlib
 comport
+```
 
 För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
 

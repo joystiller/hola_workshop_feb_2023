@@ -1,6 +1,6 @@
 # hola_workshop_feb_2023
 
-Kopiera länken till koden (tryck på gröna knappen "code", kopiera https koden)
+Kopiera länken till koden (tryck på gröna knappen "code", kopiera https koden). Det går också att ladda ner filen som zip, packa upp den och lägga den där du vill ha den. Annars: 
 
 Öppna terminalen eller kommandotolken
 
@@ -14,6 +14,17 @@ git clone https://github.com/kaffeocigg/hola_workshop_feb_2023.git
 
 Gå in i mappen genom att skriva cd hola_workshop_feb_2023
 
+Mappen innehåller flera olika filer för olika projekt. För att använda arduino-koderna behöver du ladda ner "Arduino IDE". Därifrån kan du ladda upp koden på din Arduino. För att kommunikationen mellan Arduino och Pd ska funka kan inte Arduinos "serial monitor" vara öppen.
+
+För att använda .pd-sketcherna kan du behöva installera olika bibliotek. Gå till help -> find externals, och sök efter "else", välj installera. Installera sedan också biblioteket "cyclone". Du kan också behöva installera "iemlib". För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
+
+För att ladda upp en ny sketch måste du först stänga kommunikationen i Pd. 
+
+
+
+
+I mappen ligger också ett program som laddar ner väderdata från SMHI och som skickar det vidare till Pd. Nedan följer instruktionerna för hur det funkar. Öppna terminalen eller kommandotolken och navigera till mappen "hola_workshop_feb_2023". 
+
 
 Skriv 
 ```
@@ -23,8 +34,6 @@ npm install
 Detta installerar externa bibliotek genom "node package manager". Ifall npm saknas, ladda ner node [här](https://nodejs.org/en/download/).
 
 Öppna sketchen hola_smhi_api.pd.
-
-Kanske funkar inte [mrpeach/udpreceive] objektet? Gå i så fall till help -> externals och sök efter mrpeach eller udpreceive, och välj installera. Funkar inte det kan man prova att gå till pd -> preferences -> startup och lägga till "mrpeach". Man kan också prova att göra ett nytt objekt och skriva in "declare -lib mrpeach". 
 
 Starta servern som laddar ner vädret, skriv
 ```

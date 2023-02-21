@@ -14,9 +14,14 @@ git clone https://github.com/kaffeocigg/hola_workshop_feb_2023.git
 
 Gå in i mappen genom att skriva cd hola_workshop_feb_2023
 
-Mappen innehåller flera olika filer för olika projekt. För att använda arduino-koderna behöver du ladda ner "Arduino IDE". Därifrån kan du ladda upp koden på din Arduino. För att kommunikationen mellan Arduino och Pd ska funka kan inte Arduinos "serial monitor" vara öppen.
+Mappen innehåller flera olika filer för olika projekt. För att använda arduino-koderna behöver du ladda ner "Arduino IDE". Därifrån kan du ladda upp koden på din Arduino. Ifall det högst upp i koden står till exempel
 
-För att använda .pd-sketcherna kan du behöva installera olika bibliotek. Gå till help -> find externals, och installera följande bibliotek:
+```
+#include <CapacitiveSensor.h>
+```
+så betyder det att ett bibliotek används. Då kan du behöva installera biblioteket. Gå i så fall till sketch -> include library -> manage libraries. Sök sedan efter biblioteket, till exempel "CapacitiveSensor", och välj "install". 
+
+För att använda .pd-sketcherna kan du också behöva installera olika bibliotek. Gå till help -> find externals, och installera följande bibliotek:
 
 ```
 else
@@ -27,7 +32,10 @@ comport
 
 För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Ifall du är osäker på vilken som är din Arduino device kan du gå till Arduino IDE, tools -> port, och leta efter den som heter "arduino UNO" (om du nu har just en arduino Uno).  Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
 
-För att ladda upp en ny sketch måste du först stänga kommunikationen i Pd. 
+Om kommunikationen mellan Arduino och Pd går trögt, dubbelkolla att inte Arduinos "serial monitor" fönster är öppet.
+
+För att ladda upp en ny sketch till din Arduino måste du först stänga kommunikationen i Pd. 
+
 
 
 

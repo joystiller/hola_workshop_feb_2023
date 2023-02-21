@@ -25,7 +25,7 @@ iemlib
 comport
 ```
 
-För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
+För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Ifall du är osäker på vilken som är din Arduino device kan du gå till Arduino IDE, tools -> port, och leta efter den som heter "arduino UNO" (om du nu har just en arduino Uno).  Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
 
 För att ladda upp en ny sketch måste du först stänga kommunikationen i Pd. 
 

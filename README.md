@@ -16,7 +16,14 @@ Gå in i mappen genom att skriva cd hola_workshop_feb_2023
 
 Mappen innehåller flera olika filer för olika projekt. För att använda arduino-koderna behöver du ladda ner "Arduino IDE". Därifrån kan du ladda upp koden på din Arduino. För att kommunikationen mellan Arduino och Pd ska funka kan inte Arduinos "serial monitor" vara öppen.
 
-För att använda .pd-sketcherna kan du behöva installera olika bibliotek. Gå till help -> find externals, och sök efter "else", välj installera. Installera sedan också biblioteket "cyclone". Du kan också behöva installera "iemlib". För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
+För att använda .pd-sketcherna kan du behöva installera olika bibliotek. Gå till help -> find externals, och installera följande bibliotek:
+
+else
+cyclone
+iemlib
+comport
+
+För att kommunicera med Arduino behöver du först ansluta till den. Öppna en .pd patch från mappen "pd-patches", tryck sen på devices-knappen och kolla i Pd's konsoll vilka devices som finns tillgängliga. Lägg märke till siffran, för det är den du vill ansluta till. Tryck sen på "open-#", byt ut # mot siffran som överensstämmer med din Arduino device. 
 
 För att ladda upp en ny sketch måste du först stänga kommunikationen i Pd. 
 

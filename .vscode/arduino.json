@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:uno",
     "port": "/dev/tty.usbmodem14301",
-    "sketch": "arduino_code/Arduino_serial/Arduino_serial.ino",
+    "sketch": "arduino_code/blinker/blinker.ino",
     "output": "../ArduinoOutput"
 }

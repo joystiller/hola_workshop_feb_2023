@@ -1,5 +1,7 @@
 # hola_workshop_feb_2023
 
+Much of this code is collected from legendary **Sound Simulator** on Youtube. Check out his channel [here](https://www.youtube.com/@SoundSimulator)!
+
 Kopiera länken till koden (tryck på gröna knappen "code", kopiera https koden). Det går också att ladda ner filen som zip, packa upp den och lägga den där du vill ha den. Annars: 
 
 Öppna terminalen eller kommandotolken

@@ -20,7 +20,7 @@ void loop()
   long measurement3 = cs2.capacitiveSensor(30);
   Serial.println(measurement);
   Serial.println(measurement2);
-  Serial.println(measurement3);
+  Serial.print´ln(measurement3);
   delay(10);
 }
 */

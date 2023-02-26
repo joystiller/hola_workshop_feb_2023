@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:uno",
     "port": "/dev/tty.usbmodem14301",
-    "sketch": "arduino_code/stepper_motor/stepper_motor.ino",
+    "sketch": "arduino_code/working_sketch/working_sketch.ino",
     "output": "../ArduinoOutput"
 }
